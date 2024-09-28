@@ -3,8 +3,7 @@ fn main() {
 
     let r1 = &s; // no problem
     let r2 = &s; // no problem
-    println!("{r1} and {r2}");
-    // Variables r1 and r2 will not be used after this point.
+                 // Variables r1 and r2 will not be used after this point.
 
     let r3 = &mut s; // no problem
     println!("{r3}");
