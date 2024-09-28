@@ -1,12 +1,6 @@
 fn main() {
-    let x = 5;
-
-    let x = x + 1;
-
-    {
-        let x = x * 2;
-        println!("The value of x in the inner scope is: {x}");
+    for number in (1..4).rev() {
+        println!("{number}!");
     }
-
-    println!("The value of x is: {x}");
+    println!("LIFTOFF!!!");
 }
