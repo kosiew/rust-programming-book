@@ -4,18 +4,12 @@ struct Rectangle {
     height: u32,
 }
 
-#[derive(Debug)]
-struct Square {
-    side: u32,
-}
-
 fn main() {
+    let scale = 2;
     let rect1 = Rectangle {
-        width: 30,
+        width: dbg!(30 * scale),
         height: 50,
     };
 
-    let square1 = Square { side: rect1.height };
-
-    println!("rect1 is {:#?}, square1 is {:#?}", rect1, square1);
+    dbg!(&rect1);
 }
